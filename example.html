@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/jquery/1.10.2/jquery.min.js"></script>
+    <script src="bootstrap-rating-input.min.js"></script>
+    link rel="stylesheet" href="/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<input type="number" name="My Rating System" id="Demo" class="rating" data-clearable="remove"/>
+<script>
+    $('input.my_class').rating({
+        'min': 1,
+        'max': 5,
+        'empty-value': 0,
+        'iconLib': 'glyphicon',
+        'activeIcon': 'glyphicon-star',
+        'inactiveIcon': 'glyphicon-star-empty',
+        'clearable': false,
+        'clearableIcon': 'glyphicon-remove',
+        'inline': false,
+        'readonly': false,
+        'copyClasses': true
+    });
+</script>
+</body>
+</html>
